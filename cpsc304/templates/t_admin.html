@@ -1,0 +1,86 @@
+{% extends "t_home.html" %}
+
+{% block top_3 %}
+    {% module top3NoUser() %}
+{% end %}
+
+{% block wrapper_rightbar_box1 %}
+{% end %}
+
+{% block wrapper_main_box1 %}
+    <div class="box">
+        {% if allUsers %}
+            {% for user in allUsers %}
+                <div class="cell" id="userDiv{{user['id']}}">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="73" valign="top" align="center">
+                                    <img class="avator" src="{{ static_url(user["icon"]) }}" alt="" border="0" align="default" style="max-width: 30px; max-height: 30px;">
+                                </td>
+                                <td width="30"></td>
+                                <td width="30" valign="top" align="right">
+                                    <h5 valign="top">{{user["account"]}}</h5>
+                                </td>
+                                <td width="30"></td>
+                                <td width="30" valign="top" align="left">
+                                    <h5 valign="top">{{user["mail"]}}</h5>
+                                </td>
+                                <td width="auto" valign="top" align="right">
+                                    <button class="btn btn-xs btn-danger" id="userDelBtn{{user['id']}}" type="button">delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {% end %}
+        {% end %}
+        <div class="inner"></div>
+    </div>
+    <div class="sep20"></div>
+    <div class="box">
+        {% if allPosts %}
+            <div class="cell"><span class="gray">all posts</span></div>
+            {% for post in allPosts %}
+                {% module Post(post) %}
+            {% end %}
+        {% end %}
+    </div>
+    <div class="sep20"></div>
+    <div class="box">
+        {% if allReplys %}
+            <div class="cell"><span class="gray">all replys</span></div>
+            {% for reply in allReplys %}
+                {% module Reply(reply) %}
+            {% end %}
+        {% end %}
+    </div>
+    <div class="sep20"></div>
+{% end %}
+
+{% block wrapper_main_box2 %}
+{% end %}
+
+{% block script %}
+    {% for user in allUsers %}
+        <script>
+        $(function() {
+                delUser{{user['id']}}();
+                });
+        function delUser{{user['id']}}(){
+            $("#userDelBtn{{user['id']}}").click(function(){
+                    alert("in jquery");
+                    var url="/db?action=del_user&uid={{user['id']}}";
+                    $.get(url, function(res){
+                        if(res=="T"){
+                        $("#userDiv{{user['id']}}").hide(1000);
+                        }
+                    })
+            })
+        }
+        </script>
+        <script>
+        $('#userDelBtn{{user['id']}}').validator()
+        </script>
+    {% end %}
+{% end %}

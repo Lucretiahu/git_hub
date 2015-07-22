@@ -1,0 +1,18 @@
+{% extends "t_home.html" %}
+
+{% block wrapper_rightbar_box2 %}
+{% end %}
+
+{% block wrapper_main_box1 %}
+    <div class="box">
+        {% if posts %}
+            <div class="cell"><span class="gray">Search Result</span></div>
+            {% for post in posts %}
+                {% module Post(post) %}
+            {% end %}
+        {% end %}
+    </div>
+{% end %}
+
+{% block wrapper_main_box2 %}
+{% end %}

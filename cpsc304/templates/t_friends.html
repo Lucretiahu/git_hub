@@ -1,0 +1,42 @@
+{% extends "t_home.html" %}
+
+
+{% block wrapper_rightbar_box2 %}
+{% end %}
+
+{% block wrapper_main_box1 %}
+    <div class="box">
+        <div class="cell">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td width="73" valign="top" align="center">
+                            <img class="avator" src="{{ static_url(user["icon"]) }}" alt="" border="0" align="default" style="max-width: 73px; max-height: 73px;">
+                            <div class="sep10"></div>
+                        </td>
+                        <td width="10"></td>
+                        <td width="auto" valign="top" align="left">
+                            <h1 valign="top" style="margin-bottom: 5px; margin-top: 0px;" >{{user["account"]}}</h1>
+                            <div class="sep10"></div>
+                            <span class="gray">The No.{{user["id"]}} member in this forum.</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="inner"></div>
+    </div>
+    <div class="sep20"></div>
+    <div class="box">
+        <div class="cell"><span class="gray">The friends of {{user["account"]}}'s posts</span></div>
+        {% if posts %}
+            {% for post in posts %}
+                {% module Post(post) %}
+            {% end %}
+        {% end %}
+    </div>
+    <div class="sep20"></div>
+{% end %}
+
+{% block wrapper_main_box2 %}
+{% end %}

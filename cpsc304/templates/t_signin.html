@@ -1,0 +1,32 @@
+{% extends "home.html" %}
+
+{% block top_3 %}
+    {% module top3NoUser() %}
+{% end %}
+
+{% block wrapper_rightbar_box1 %}
+    {% module rBox1NoUser() %}
+{% end %}
+
+{% block wrapper_main_box1 %}
+    <div class="box">
+        {% if warning %}
+        <div class="cell">
+            <div class="alert alert-danger" role="alert">{{warning}}</div>
+        </div>
+        {% end %}
+        <div class="cell">
+            <form class="form-signin" action="/db" method="post">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                <input id="inputEmail" name="mail" class="form-control" type="email" placeholder="Email Address" required="" autofocus="">
+                <input id="inputPassword" name="pwd" class="form-control" type="password" placeholder="Password" required="">
+                <div class="checkbox"><label><input type="checkbox" value="remember-me">Remember me</label></div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+    </div>
+{% end %}
+
+{% block wrapper_main_box2 %}
+    {% module secNav(sections) %}
+{% end %}

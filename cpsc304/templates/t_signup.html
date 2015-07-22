@@ -1,0 +1,56 @@
+{% extends "t_signin.html" %}
+
+{% block wrapper_main_box1 %}
+    <div class="box">
+        <div class="cell">
+            <form id="myForm" class="form-horizontal" action="/signup" data-toggle="validator" role="form" method="post">
+                <div class="form-group" style="max-height: 34px;">
+                    <label class="col-sm-4 control-label for" for="">Email</label>
+                    <div class="col-sm-5"><input id="ck_email_2" name="email" class="form-control" type="email" placeholder="example@xxx.com" required></div>
+                    <label class="col-sm-2 control-label for" id="ck_email_3"></label>
+                </div>
+                <div class="form-group" style="max-height: 34px;">
+                    <label class="col-sm-4 control-label for" for="">Account</label>
+                    <div class="col-sm-5"><input name="account" class="form-control" type="text" placeholder="Your Account"></div>
+                </div>
+                <div class="form-group" style="max-height: 34px;">
+                    <label class="col-sm-4 control-label for" for="">Password</label>
+                    <div class="col-sm-5"><input name="pwd1" id="pwd1" class="form-control" type="password" data-minlength="6" placeholder="More than 6 Character" required></div>
+                </div>
+                <div class="form-group" style="max-height: 34px;">
+                    <label class="col-sm-4 control-label for" for="">Password Confirm</label>
+                    <div class="col-sm-5"><input name="pwd2" id="pwd2" class="form-control" type="password" data-match="#pwd1" data-match-error="don't match" placeholder="Same as before" required></div>
+                </div>
+                <div class="form-group" style="max-height: 34px;">
+                    <div class="col-sm-offset-4 col-sm-5"><button class="btn btn-success" type="submit">Sign Up</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% end %}
+
+{% block script %}
+<script>
+$(function() {
+        checkMail();
+        checkAccount();
+        });
+function checkMail(){
+    $("#ck_email_2").blur(function(){
+            var mail=$(this).val();
+            var url="/db?action=ck_mail&param="+mail;
+            $.get(url, function(res){
+                if(res=="T"){
+                $("#ck_email_3").html('you can use it')
+                }
+                else{
+                $("#ck_email_3").html('already exist')
+                }
+            })
+    })
+}
+</script>
+<script>
+$('#myForm').validator()
+</script>
+{% end %}

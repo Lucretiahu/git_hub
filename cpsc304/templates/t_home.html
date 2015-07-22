@@ -1,0 +1,53 @@
+{% extends "home.html" %}
+
+{% block top_3 %}
+    {% if user %}
+        {% module top3User(user) %}
+    {% else %}
+        {% module top3NoUser() %}
+    {% end %}
+{% end %}
+
+{% block wrapper_rightbar_box1 %}
+    {% if user %}
+        {% module rBox1User(user) %}
+    {% else %}
+        {% module rBox1NoUser() %}
+    {% end %}
+{% end %}
+
+{% block wrapper_rightbar_box2 %}
+        {% module rBox2(forum, wealthList) %}
+{% end %}
+
+{% block wrapper_main_box1 %}
+    <div class="box">
+        <div id="Tabs" class="cell" style="background-color: #fff; border-top-left-radius: 3px; border-top-right-radius: 3px;">
+            {% for section in sections %}
+            <a href="#wmb1-{{section}}" class="tab" role="tab" data-toggle="tab">{{section}}</a>
+            {% end %}
+        </div>
+        <div class="tab-content">
+            {% if allPosts%}
+                {% for sName, posts in allPosts.items()%}
+                    {% if sName == 'sport' %}
+                        <div id="wmb1-{{sName}}" class="tab-pane active" role="tabpanel">
+                    {% else %}
+                        <div id="wmb1-{{sName}}" class="tab-pane" role="tabpanel">
+                    {% end %}
+                            {% if posts %}
+                                {% for post in posts %}
+                                    {% module Post(post) %}
+                                {% end %}
+                            {% else %}
+                            {% end %}
+                    </div>
+                {% end %}
+            {% end %}
+        </div>
+    </div>
+{% end %}
+
+{% block wrapper_main_box2 %}
+        {% module secNav(sections) %}
+{% end %}
