@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html> 
+<!DOCTYPE html> 
 <!-- ---- 有改动,但暂时没研究啥意思，或需要改否 ---- -->
 <!--[if lt IE 8 ]--><html class="no-js ie ie7" lang="en"> <!--[endif]-->
 <!--[if IE 8 ]--><html class="no-js ie ie8" lang="en"> <!--[endif]-->
@@ -11,14 +11,14 @@
    <meta charset="utf-8">
 	<title>Yingqi Lu's Homepage</title>
 	<meta name="description" content="Personal homepage of Yingqi Lu">
-	<meta name="author" content="">
+	<meta name="author" content="tieren">
 
    <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS 
-   ---- 需研究，为啥可以不加type="text/css" ----
+   ---- 需研究，为啥可以不加type="text/css" 因为这是html5中的表示----
    ================================================== -->
    <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
@@ -31,7 +31,7 @@
 	<script src="js/modernizr.js"></script>
 
    <!-- Favicons 
-   ---- 收藏夹图标，可改 ----
+   ---- 收藏夹图标，可改 小标识符 ----
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
 
@@ -50,14 +50,16 @@
 
       <nav id="nav-wrap">
          <!-- ---- show nav 和 hide nav 给mobile user用，待研究 ---- -->
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <!-- <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> -->
 
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+	         <li><a class="smoothscroll" href="#resume">Education</a></li>
+            <li><a class="smoothscroll" href="#Work">Work</a></li>
+            <li><a class="smoothscroll" href="#Skil">Skills</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
             <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
@@ -67,8 +69,8 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">I'm Yingqi Lu.</h1>
-            <h3>I'm a researcher in<span>Wireless Networking, Machine learning and Big Data</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
-            effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            <h3>I'm a <span>researcher</span> in <span>Wireless Communication system, Cognitive Radio Network and Machine learning</span>. In addition, I am an <span>embedded system, SoC developer</span> including development on <span>FPGA, PLD</span> and <span>ARM</span>. I am good at <span>data structure, alogrihtm</span> and some software development such as <span>TCP/IP socket programming, Web-design, Android application, SQL design</span>.
+            Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
@@ -152,7 +154,7 @@
    ================================================== -->
    <section id="resume">
 
-      <!-- Education
+      <!-- Education 修改内容教育背景
       =============================================== -->
       <div class="row education">
 
@@ -166,8 +168,8 @@
 
                <div class="twelve columns">
 
-                  <h3>University of Life</h3>
-                  <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
+                  <h3>University of Calgary</h3>
+                  <p class="info">Master of Science in Electrical and Computer Engineering <span>&bull;</span> <em class="date">September 2015</em></p>
 
                   <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -184,8 +186,26 @@
 
                <div class="twelve columns">
 
-                  <h3>School of Cool Designers</h3>
-                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
+                  <h3>NewYork Insitute of Technology</h3>
+                  <p class="info">B.Sc. Degree in Electrical and Computer Engineering <span>&bull;</span> <em class="date">June 2013</em></p>
+
+                  <p>
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+             <div class="row item">
+
+               <div class="twelve columns">
+
+               <h3>Nanjing University of Posts & Telecommunication</h3>
+                  <p class="info">B.Eng. Degree in Communication Engineering <span>&bull;</span> <em class="date">June 2013</em></p>
 
                   <p>
                   This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
@@ -202,8 +222,11 @@
 
       </div> <!-- End Education -->
 
+   </section>
 
-      <!-- Work
+   <section id="Work">
+
+     <!-- Work  工作经历
       ============================================== -->
       <div class="row work">
 
@@ -253,7 +276,9 @@
 
       </div> <!-- End Work -->
 
+    </section>
 
+  <section id="Skil">
       <!-- Skills
       =============================================== -->
       <div class="row skill">
@@ -273,12 +298,12 @@
 				<div class="bars">
 
 				   <ul class="skills">  <!-- ---- layout.css的328行开始 ---- -->
-					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
+					   <li><span class="bar-expand java"></span><em>Java</em></li>
+                  <li><span class="bar-expand c"></span><em>C/C++</em></li>
+						<li><span class="bar-expand python"></span><em>Python</em></li>
+						<li><span class="bar-expand verilog"></span><em>Verilog</em></li>
 						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+                  <li><span class="bar-expand css"></span><em>CSS</em></li>
 					</ul>
 
 				</div><!-- end skill-bars -->
@@ -298,7 +323,7 @@
 
          <div class="twelve columns collapsed">
 
-            <h1>Check Out Some of My Works.</h1>
+            <h1>Check Out Some of My Projects.</h1>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -591,7 +616,7 @@
 
    <!-- Call-To-Action Section
    ================================================== -->
-   <section id="call-to-action">
+  <!--  <section id="call-to-action">
 
       <div class="row">
 
@@ -608,7 +633,7 @@
 					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>. 
 					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
 
-         </div>
+        <!--  </div>
 
          <div class="three columns action">
 
@@ -618,7 +643,7 @@
 
       </div>
 
-   </section> <!-- Call-To-Action Section End-->
+   </section>  --><!-- Call-To-Action Section End--> -->
 
 
    <!-- Testimonials Section
@@ -660,6 +685,15 @@
                            <cite>Mr. Adobe</cite>
                         </blockquote>
                      </li> <!-- slide ends -->
+
+                      <li>
+                        <blockquote>
+                           <p> 我是一个好人，好人一生平安，她会回来找我的。
+                           </p>
+                           <cite>接盘侠</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
 
                   </ul>
 
@@ -801,17 +835,17 @@
 
             <ul class="social-links">
                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <!--  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li> -->
             </ul>
 
             <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+               <li>&copy; Copyright 2015 personal website</li>
+               <li>Design by <a title="tieren" href="http://www.styleshout.com/">Styleshout</a></li>   
             </ul>
 
          </div>
