@@ -98,6 +98,7 @@ header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
 /* scrolldown link */
+/* ---- 后面每页位置有问题 修改 ---- */
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
@@ -167,7 +168,7 @@ ul#nav li a {
    display: inline-block;
    padding: 8px 13px;
    line-height: 32px;
-	text-decoration: none;
+	 text-decoration: none;
    text-align: left;
    color: #fff;
 
@@ -211,9 +212,9 @@ ul#nav li.current a { color: #F06000; }
    height: 120px;
    border-radius: 100%;
 }
-#about .contact-details { width: 41.66667%; }
+#about .contact-details { width: 56.9999%; }
 #about .download {
-   width: 58.33333%;
+   width: 43.0001%;
    padding-top: 6px;
 }
 #about .main-col { padding-right: 5%; }
@@ -230,6 +231,28 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
+/* scrolldown link */
+/* ---- 后面每页位置有问题 修改 ---- */
+#about .scrolldown a {
+   position: relative;
+   top: 50px;
+   left: 50%;
+   margin-left: -29px;
+   color: #fff;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #fff;
+   border-radius: 100%;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+#about .scrolldown a:hover { color: #444; }
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
