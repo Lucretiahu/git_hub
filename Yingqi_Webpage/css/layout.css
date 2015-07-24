@@ -9,12 +9,14 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
+   d. Education Section
+   e. Work Section
+   f. Skills Section
+   g. Portfolio Section
+   h. Call To Action Section
+   i. Testimonials Section
+   j. Contact Section
+   k. Footer
 
 ===================================================================== */
 
@@ -98,7 +100,6 @@ header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
 /* scrolldown link */
-/* ---- 后面每页位置有问题 修改 ---- */
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
@@ -232,7 +233,6 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* scrolldown link */
-/* ---- 后面每页位置有问题 修改 ---- */
 #about .scrolldown a {
    position: relative;
    top: 50px;
@@ -255,134 +255,193 @@ ul#nav li.current a { color: #F06000; }
 #about .scrolldown a:hover { color: #444; }
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. Education Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#education {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#education a, #resume a:visited  { color: #11ABB0; }
+#education a:hover, #resume a:focus { color: #313131; }
 
-#resume h1 {
+#education h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#education h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
-#resume h3 {
+#education h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#education .edu{
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+}
 
-.education{
-   margin-bottom: 48px;
-   padding-bottom: 24px;
+#education .header-col { padding-top: 9px; }
+#education .main-col { padding-right: 8%; }
+
+#education .pic-info {
+   margin-bottom: 10px;
+   padding-bottom: 10px;
    border-bottom: 1px solid #E8E8E8;
 }
 
-#resume .info {
+#education .pic-col { padding-left: 0%; }
+#education .info-col { padding-left: 15% }
+
+#education .profile-pic {
+   position: relative;
+   width: 80px;
+   height: 80px;
+   border-radius: 100%;
+}
+
+#education .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#education .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#education .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
 
+/* scrolldown link */
+#education .scrolldown a {
+   position: relative;
+   top: 50px;
+   left: 50%;
+   margin-left: -29px;
+   color: #000;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #000;
+   border-radius: 100%;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+#education .scrolldown a:hover { color: #CCCCCC; }
+
 /* ------------------------------------------------------------------ */
-/* d. Work Section
+/* e. Work Section
 /* ------------------------------------------------------------------ */
 
-#Work {
+#work {
    background: #2B2B2B;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#Work a, #Work a:visited  { color: #11ABB0; }
-#Work a:hover, #Work a:focus { color: #313131; }
+#work a, #work a:visited  { color: #11ABB0; }
+#work a:hover, #work a:focus { color: #313131; }
 
-#Work h1 {
+#work h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#Work h1 span {
+#work h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
    color: #fff;
 }
-#Work h3 {
+#work h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
    color: #fff;
 }
 
-#Work .header-col { padding-top: 9px; }
-#Work .main-col { padding-right: 10%; }
+#work .header-col { padding-top: 9px; }
+#work .main-col { padding-right: 10%; }
 
-.work {
-   margin-bottom: 48px;
+#work .wrk {
+   /* margin-bottom: 48px;
    padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
+   border-bottom: 1px solid #E8E8E8; */
 }
 
-#Work .info {
+#work .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#Work .info span {
+#work .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#Work .date {
+#work .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
-#Skil {
+/* scrolldown link */
+#work .scrolldown a {
+   position: relative;
+   top: 50px;
+   left: 50%;
+   margin-left: -29px;
+   color: #fff;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #fff;
+   border-radius: 100%;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+#work .scrolldown a:hover { color: #444; }
+
+/* ---------------------------------------------------- */
+/* f. Skill Section
+/* ---------------------------------------------------- */
+#skill {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#Skil a, #Skil a:visited  { color: #11ABB0; }
-#Skil a:hover, #Skil a:focus { color: #313131; }
+#skill a, #skill a:visited  { color: #11ABB0; }
+#skill a:hover, #skill a:focus { color: #313131; }
 
-#Skil h1 {
+#skill h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#Skil h1 span {
+#skill h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
 
-#Skil .header-col { padding-top: 9px; }
-#Skil .main-col { padding-right: 10%; }
+#skill .header-col { padding-top: 9px; }
+#skill .main-col { padding-right: 10%; }
 .bars {
 	width: 95%;
 	float: left;
@@ -394,7 +453,7 @@ ul#nav li.current a { color: #F06000; }
    list-style: none;
 }
 .bars li {
-   position: relative;
+    position: relative;
   	margin-bottom: 60px;
   	background: #ccc;
   	height: 42px;
@@ -402,11 +461,11 @@ ul#nav li.current a { color: #F06000; }
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
+  color: #313131;
 	text-transform: uppercase;
-   letter-spacing: 2px;
+  letter-spacing: 2px;
 	font-weight: normal;
-   position: relative;
+  position: relative;
 	top: -36px;
 }
 .bar-expand {
@@ -416,9 +475,9 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+   background: #313131;
    display: inline-block;
-  	height: 42px;
+   height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
@@ -503,6 +562,28 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+
+/* scrolldown link */
+#skill .scrolldown a {
+   position: relative;
+   top: 50px;
+   left: 50%;
+   margin-left: -29px;
+   color: #000;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #000;
+   border-radius: 100%;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+#skill .scrolldown a:hover { color: #CCCCCC; }
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section

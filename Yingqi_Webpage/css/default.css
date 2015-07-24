@@ -257,7 +257,7 @@ blockquote cite a:visited { color: #8B9798; border: none }
    content: none;
 }
 
-/*  1. Abbreviations ----------------------- */
+/* Abbreviations */
 abbr {
    font-family: 'opensans-bold', sans-serif;
 	font-variant: small-caps;
@@ -267,7 +267,7 @@ abbr {
 }
 abbr:hover { cursor: help; }
 
-/*  2. drop cap --------------------------------------------------------------------------------- */
+/* drop cap */
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;

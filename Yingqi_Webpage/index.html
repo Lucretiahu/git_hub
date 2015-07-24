@@ -30,7 +30,6 @@
 	<script type="text/javascript" src="js/modernizr.js"></script>
 
    <!-- Favicons 
-   ---- 收藏夹图标， 可以改一下用自己的图 ----
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.jpg" >
 
@@ -54,9 +53,9 @@
          <ul id="nav" class="nav">  <!-- ---- nav 添加修改 layout变化了，需再改 ---- -->
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Education</a></li> <!-- -- layout有问题 -- -->
-            <li><a class="smoothscroll" href="#Work">Work</a></li> <!-- -- layout有问题 -- -->
-            <li><a class="smoothscroll" href="#Skil">Skills</a></li> <!-- -- layout有问题 -- -->
+	         <li><a class="smoothscroll" href="#education">Education</a></li> <!-- -- layout有问题 -- -->
+            <li><a class="smoothscroll" href="#work">Work</a></li> <!-- -- layout有问题 -- -->
+            <li><a class="smoothscroll" href="#skill">Skills</a></li> <!-- -- layout有问题 -- -->
             <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
             <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
@@ -128,7 +127,7 @@
                   
                   <p class="address">   
 						   <ul>
-                        <li><span>YINGQI LU</span></li> <!-- ---- 可加style改颜色，可加了<i>标签斜体字 ---- -->
+                        <li><span>YINGQI LU</span></li>
                         <li><span>ICT 520, Dep. of Electrical and Computer Engineering<br>Schulich School of Engineering<br>University of Calgary</span></li>
                         <li><span>2500 University Drive NW<br>Calgary, Alberta CANADA, T2N 1N4</span></li>
                         <li><span>Telephone: (587)899-5488</span><br></li>
@@ -152,34 +151,35 @@
 
       </div>
 
-      
-      <!-- ---- 添加icon-down，位置大小有问题 layout.css line101, columns写好了位置不好改 ---- -->
       <p class="scrolldown">
-         <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a>
+         <a class="smoothscroll" href="#education"><i class="icon-down-circle"></i></a>
       </p>
-
 
    </section> <!-- About Section End-->
 
 
-   <!-- Resume Section
+   <!-- Education Section
+   ---- 添加school-pic ---- 
    ================================================== -->
-   <section id="resume">
+   <section id="education">
 
-      <!-- Education 
-      ---- 修改内容教育背景 layout有问题 ----
-      =============================================== -->
-      <div class="row education">
+      <div class="row edu">
 
-         <div class="three columns header-col">
+         <div class="two columns header-col">
             <h1><span>Education</span></h1>
          </div>
 
-         <div class="nine columns main-col">
+         <div class="ten columns main-col">
 
-            <div class="row item">
+            <div class="row pic-info">
 
-               <div class="twelve columns">
+               <div class="two colomns pic-col">
+
+                  <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+               </div>
+
+               <div class="twelve colomns info-col">
 
                   <h3>University of Calgary</h3>
                   <p class="info">Master of Science in Electrical and Computer Engineering <span>&bull;</span> <em class="date">September 2015</em></p>
@@ -189,68 +189,76 @@
                   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                   ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                   Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
+                  </p>  
 
                </div>
 
-            </div> <!-- item end -->
+            </div> <!-- pic-info end -->
 
-            <div class="row item">
+            <div class="row pic-info">
 
-               <div class="twelve columns">
+               <div class="two colomns pic-col">
 
-                  <h3>NewYork Insitute of Technology</h3>
-                  <p class="info">B.Sc. Degree in Electrical and Computer Engineering <span>&bull;</span> <em class="date">June 2013</em></p>
+                  <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+               </div>
+
+               <div class="twelve colomns info-col">
+
+                  <h3>University of Calgary</h3>
+                  <p class="info">Master of Science in Electrical and Computer Engineering <span>&bull;</span> <em class="date">September 2015</em></p>
 
                   <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
+                  </p>  
 
                </div>
 
-            </div> <!-- item end -->
+            </div> <!-- pic-info end -->
 
-             <!-- ---- 添加了一栏 layout调整 ---- -->
-             <div class="row item">
+            <div class="row">
 
-               <div class="twelve columns">
+               <div class="two colomns pic-col">
 
-               <h3>Nanjing University of Posts & Telecommunication</h3>
-                  <p class="info">B.Eng. Degree in Communication Engineering <span>&bull;</span> <em class="date">June 2013</em></p>
+                  <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+               </div>
+
+               <div class="twelve colomns info-col">
+
+                  <h3>University of Calgary</h3>
+                  <p class="info">Master of Science in Electrical and Computer Engineering <span>&bull;</span> <em class="date">September 2015</em></p>
 
                   <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
+                  </p>  
 
                </div>
 
-            </div> <!-- item end -->
+            </div> <!-- pic-info end -->
 
          </div> <!-- main-col end -->
 
-      </div> <!-- End Education -->
+      </div> <!-- End row -->
 
-      <!-- ---- 添加icon-down，位置大小有问题 且不是section不能到下一个位置 ---- -->
       <p class="scrolldown">
          <a class="smoothscroll" href="#work"><i class="icon-down-circle"></i></a>
       </p>
    
-   <!-- ---- 添加section 改layout ---- -->
    </section>
 
 
    <!-- Work Section
-   ---- 线条位置改动 ----
    ================================================== -->
-   <section id="Work">
+   <section id="work">
 
-      <div class="row work">
+      <div class="row wrk">
 
          <div class="three columns header-col">
             <h1><span>Work</span></h1>
@@ -298,21 +306,18 @@
 
       </div> <!-- End Work -->
 
-      <!-- ---- 添加icon-down，位置大小有问题 且不是section不能到下一个位置 ---- -->
       <p class="scrolldown">
-         <a class="smoothscroll" href="#skil"><i class="icon-down-circle"></i></a>
+         <a class="smoothscroll" href="#skill"><i class="icon-down-circle"></i></a>
       </p>
    
-   <!-- ---- 添加section 改layout ---- -->
    </section>
 
 
    <!-- Skills Section
-   ---- 线条 ----
    =============================================== -->
-   <section id="Skil">
+   <section id="skill">
       
-      <div class="row skill">
+      <div class="row skills">
 
          <div class="three columns header-col">
             <h1><span>Skills</span></h1>
@@ -343,7 +348,6 @@
 
       </div> <!-- End skills -->
 
-      <!-- ---- 添加icon-down，位置大小有问题 ---- -->
       <p class="scrolldown">
          <a class="smoothscroll" href="#portfolio"><i class="icon-down-circle"></i></a>
       </p>
