@@ -9,29 +9,29 @@
    ---- 此处改动了网页标签名称以及描述，meta标签后的东西不是给浏览网页者看的，所以网页上不会显示 ----
    ================================================== -->
    <meta charset="utf-8">
-	<title>Yingqi Lu's Homepage</title>
-	<meta name="description" content="Personal homepage of Yingqi Lu">
-	<meta name="author" content="tieren">
+	<title>Yingqi Lu's Website</title>
+	<meta name="description" content="Personal Website of Yingqi Lu">
+	<meta name="author" content="Zhixuan Hu, Jiepanxia Lu">
 
    <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS 
-   ---- 需研究，为啥可以不加type="text/css" 因为这是html5中的表示----
+   ---- 加type="text/css" 更规范好习惯 ----
    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css ">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link type="text/css" rel="stylesheet" href="css/default.css">
+	<link type="text/css" rel="stylesheet" href="css/layout.css">
+   <link type="text/css" rel="stylesheet" href="css/media-queries.css ">
+   <link type="text/css" rel="stylesheet" href="css/magnific-popup.css">
 
    <!-- Script 
-   ---- 为啥可以不加type="text/javascript" ----
+   ---- 加type="text/javascript" ----
    ================================================== -->
-	<script src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
 
    <!-- Favicons 
-   ---- 收藏夹图标，可改 小标识符 ----
+   ---- 收藏夹图标， 可以改一下用自己的图 ----
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
 
@@ -49,16 +49,16 @@
    <header id="home">
 
       <nav id="nav-wrap">
-         <!-- ---- show nav 和 hide nav 给mobile user用，待研究 ---- -->
-         <!-- <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> -->
+         <!-- ---- show nav 和 hide nav 给mobile user用，待研究，不要注释掉，手机用户可见 ---- -->
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-         <ul id="nav" class="nav">
+         <ul id="nav" class="nav">  <!-- ---- nav 添加修改 layout变化了，需再改 ---- -->
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Education</a></li>
-            <li><a class="smoothscroll" href="#Work">Work</a></li>
-            <li><a class="smoothscroll" href="#Skil">Skills</a></li>
+	         <li><a class="smoothscroll" href="#resume">Education</a></li> <!-- -- layout有问题 -- -->
+            <li><a class="smoothscroll" href="#Work">Work</a></li> <!-- -- layout有问题 -- -->
+            <li><a class="smoothscroll" href="#Skil">Skills</a></li> <!-- -- layout有问题 -- -->
             <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
             <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
@@ -147,6 +147,11 @@
 
       </div>
 
+      <!-- ---- 添加icon-down，位置大小有问题 ---- -->
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
    </section> <!-- About Section End-->
 
 
@@ -154,7 +159,8 @@
    ================================================== -->
    <section id="resume">
 
-      <!-- Education 修改内容教育背景
+      <!-- Education 
+      ---- 修改内容教育背景 layout有问题 ----
       =============================================== -->
       <div class="row education">
 
@@ -200,6 +206,7 @@
 
             </div> <!-- item end -->
 
+             <!-- ---- 添加了一栏 layout调整 ---- -->
              <div class="row item">
 
                <div class="twelve columns">
@@ -222,12 +229,20 @@
 
       </div> <!-- End Education -->
 
+      <!-- ---- 添加icon-down，位置大小有问题 ---- -->
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+   
+   <!-- ---- 添加section 改layout ---- -->
    </section>
 
+
+   <!-- Work Section
+   ---- 线条位置改动 ----
+   ================================================== -->
    <section id="Work">
 
-     <!-- Work  工作经历
-      ============================================== -->
       <div class="row work">
 
          <div class="three columns header-col">
@@ -276,11 +291,20 @@
 
       </div> <!-- End Work -->
 
-    </section>
+      <!-- ---- 添加icon-down，位置大小有问题 ---- -->
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+   
+   <!-- ---- 添加section 改layout ---- -->
+   </section>
 
-  <section id="Skil">
-      <!-- Skills
-      =============================================== -->
+
+   <!-- Skills Section
+   ---- 线条 ----
+   =============================================== -->
+   <section id="Skil">
+      
       <div class="row skill">
 
          <div class="three columns header-col">
@@ -311,6 +335,11 @@
 			</div> <!-- main-col end -->
 
       </div> <!-- End skills -->
+
+      <!-- ---- 添加icon-down，位置大小有问题 ---- -->
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
    </section> <!-- Resume Section End-->
 
@@ -615,8 +644,9 @@
 
 
    <!-- Call-To-Action Section
+   ---- 删了， layout问题 ----
    ================================================== -->
-  <!--  <section id="call-to-action">
+  <!-- ---- <section id="call-to-action">
 
       <div class="row">
 
@@ -630,10 +660,10 @@
 
             <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
             <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>. 
-					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
+					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.
+				</p>
 
-        <!--  </div>
+         </div>
 
          <div class="three columns action">
 
@@ -643,10 +673,11 @@
 
       </div>
 
-   </section>  --><!-- Call-To-Action Section End--> -->
+   </section> ---- --> <!-- Call-To-Action Section End-->
 
 
    <!-- Testimonials Section
+   ---- 客户感言section，标题标签要改 ----
    ================================================== -->
    <section id="testimonials">
 
@@ -686,7 +717,8 @@
                         </blockquote>
                      </li> <!-- slide ends -->
 
-                      <li>
+                     <!-- ---- 什么鬼··· ---- -->
+                     <li>
                         <blockquote>
                            <p> 我是一个好人，好人一生平安，她会回来找我的。
                            </p>
@@ -826,6 +858,7 @@
 
 
    <!-- footer
+   ---- 嘻嘻，加了我的linkedin ----
    ================================================== -->
    <footer>
 
@@ -834,18 +867,18 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.facebook.com/lyqet"><i class="fa fa-facebook"></i></a></li>
                <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <!--  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://www.linkedin.com/pub/yingqi-lu/a4/7b/729"><i class="fa fa-linkedin"></i></a></li>
+               <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                <li><a href="#"><i class="fa fa-skype"></i></a></li> -->
             </ul>
 
             <ul class="copyright">
-               <li>&copy; Copyright 2015 personal website</li>
-               <li>Design by <a title="tieren" href="http://www.styleshout.com/">Styleshout</a></li>   
+               <li>&#x263a; 2015 personal website</li>
+               <li>Modified by <a title="Zhixuan Hu" href="https://www.linkedin.com/in/lucretiahu">Zhixuan Hu</a></li>   
             </ul>
 
          </div>
