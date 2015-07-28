@@ -287,7 +287,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #education .header-col { padding-top: 9px; }
-#education .main-col { padding-right: 8%; }
+#education .main-col { padding-right: 5%; }
 
 #education .pic-info {
    margin-bottom: 10px;
@@ -295,10 +295,10 @@ ul#nav li.current a { color: #F06000; }
    border-bottom: 1px solid #E8E8E8;
 }
 
-#education .pic-col { padding-left: 0%; }
-#education .info-col { padding-left: 15% }
+#education .pic-col { padding-left: 2%; }
+#education .info-col { padding-left: 0% }
 
-#education .profile-pic {
+#education .school-pic {
    position: relative;
    width: 80px;
    height: 80px;
@@ -515,11 +515,11 @@ ul#nav li.current a { color: #F06000; }
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes illustrator {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes wordpress {
   0%   { width: 0px;  }
@@ -527,24 +527,24 @@ ul#nav li.current a { color: #F06000; }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
 
 @-webkit-keyframes photoshop {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes illustrator {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes wordpress {
   0%   { width: 0px;  }
@@ -552,15 +552,15 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
 
 /* scrolldown link */
